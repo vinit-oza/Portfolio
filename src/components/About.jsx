@@ -76,7 +76,7 @@ const About = () => {
                 <StyledWrapper>
                   <div className="cardContainer">
                     <div className="profileDiv">
-                      <img src="/profile.jpg" alt="Vinit Prajapati" className="profile-image" />
+                      <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Vinit Prajapati" className="profile-image" />
                     </div>
                     <div className="infoDiv">
                       <div className="nameDiv">
