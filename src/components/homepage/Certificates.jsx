@@ -10,8 +10,8 @@ const certificatesData = [
     issuer: "Professional Certification",
     date: "2025",
     category: "Data Analytics",
-    pdfUrl: "/Data Analytics And Vissulization.pdf",
-    imageUrl: "/certificates/Data Analytics And Visualization.png",
+    pdfUrl: `${import.meta.env.BASE_URL}Data Analytics And Vissulization.pdf`,
+    imageUrl: `${import.meta.env.BASE_URL}certificates/Data Analytics And Visualization.png`,
   },
   {
     id: 2,
@@ -19,8 +19,8 @@ const certificatesData = [
     issuer: "IBM / Coursera",
     date: "2025",
     category: "Data Science",
-    pdfUrl: "/Databases and SQL for Data Science with Python.pdf",
-    imageUrl: "/certificates/Databases and SQL for Data Science with Python.png",
+    pdfUrl: `${import.meta.env.BASE_URL}Databases and SQL for Data Science with Python.pdf`,
+    imageUrl: `${import.meta.env.BASE_URL}certificates/Databases and SQL for Data Science with Python.png`,
   },
   {
     id: 3,
@@ -28,8 +28,8 @@ const certificatesData = [
     issuer: "Professional Certification",
     date: "2025",
     category: "Generative AI",
-    pdfUrl: "/Gen AI For Data Analytics.pdf",
-    imageUrl: "/certificates/Gen AI For Data Analytics.png",
+    pdfUrl: `${import.meta.env.BASE_URL}Gen AI For Data Analytics.pdf`,
+    imageUrl: `${import.meta.env.BASE_URL}certificates/Gen AI For Data Analytics.png`,
   },
   {
     id: 4,
@@ -37,8 +37,8 @@ const certificatesData = [
     issuer: "Professional Certification",
     date: "2025",
     category: "Generative AI",
-    pdfUrl: "/Gen Ai Prompt Engg.pdf",
-    imageUrl: "/certificates/Gen AI Prompt Engineering.png",
+    pdfUrl: `${import.meta.env.BASE_URL}Gen Ai Prompt Engg.pdf`,
+    imageUrl: `${import.meta.env.BASE_URL}certificates/Gen AI Prompt Engineering.png`,
   },
   {
     id: 5,
@@ -46,8 +46,8 @@ const certificatesData = [
     issuer: "Google / Coursera",
     date: "2025",
     category: "Project Management",
-    pdfUrl: "/Google Agile Project Management.pdf",
-    imageUrl: "/certificates/Google Agile Project Management.png",
+    pdfUrl: `${import.meta.env.BASE_URL}Google Agile Project Management.pdf`,
+    imageUrl: `${import.meta.env.BASE_URL}certificates/Google Agile Project Management.png`,
   },
   {
     id: 6,
@@ -55,8 +55,8 @@ const certificatesData = [
     issuer: "Microsoft",
     date: "2025",
     category: "Data Engineering",
-    pdfUrl: "/Microsoft (ETL).pdf",
-    imageUrl: "/certificates/Microsoft ETL.png",
+    pdfUrl: `${import.meta.env.BASE_URL}Microsoft (ETL).pdf`,
+    imageUrl: `${import.meta.env.BASE_URL}certificates/Microsoft ETL.png`,
   },
 ];
 
