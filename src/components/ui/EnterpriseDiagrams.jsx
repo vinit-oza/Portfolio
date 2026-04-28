@@ -487,113 +487,187 @@ export function CreditWiseArchitectureDiagram() {
         </div>
       </div>
 
-      {/* Full-Screen Popup Modal */}
+      {/* Full-Screen Popup Modal - Redesigned */}
       {isPopupOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4" onClick={() => setIsPopupOpen(false)}>
-          <div className="bg-white rounded-2xl shadow-2xl w-full h-full max-w-7xl max-h-[90vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
-            {/* Header */}
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-4 rounded-t-2xl flex justify-between items-center">
-              <div>
-                <h3 className="text-2xl font-grotesk font-bold">CreditWise System Architecture</h3>
-                <p className="text-sm text-blue-100 mt-1">Interactive diagram - Zoom, pan, and explore the architecture</p>
-              </div>
-              <button 
-                onClick={() => setIsPopupOpen(false)}
-                className="text-white hover:text-gray-200 text-3xl font-bold leading-none"
-              >
-                ×
-              </button>
-            </div>
-
-            {/* Diagram */}
-            <div className="flex-1 relative">
-              <ReactFlow
-                nodes={nodes}
-                edges={edges}
-                onNodesChange={onNodesChange}
-                onEdgesChange={onEdgesChange}
-                nodeTypes={nodeTypes}
-                fitView
-                attributionPosition="bottom-left"
-              >
-                <Background color="#e5e7eb" gap={16} />
-                <Controls />
-                <MiniMap
-                  nodeColor={(node) => {
-                    if (node.data.color?.includes('blue')) return '#3b82f6';
-                    if (node.data.color?.includes('green')) return '#10b981';
-                    if (node.data.color?.includes('purple')) return '#8b5cf6';
-                    if (node.data.color?.includes('amber')) return '#f59e0b';
-                    if (node.data.color?.includes('indigo')) return '#6366f1';
-                    if (node.data.color?.includes('red')) return '#ef4444';
-                    return '#6b7280';
-                  }}
-                  maskColor="rgba(0, 0, 0, 0.1)"
-                />
-              </ReactFlow>
-
-              {/* Metadata Panel - Bottom Right in Popup */}
-              <div className="absolute bottom-20 right-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-xl border-2 border-gray-300 p-4 max-w-xs">
-                <h4 className="font-grotesk font-bold text-sm text-gray-900 mb-3">System Metrics</h4>
-                <div className="space-y-2 text-xs">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Total Users:</span>
-                    <span className="font-semibold text-gray-900">85,000+</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Avg Score Improvement:</span>
-                    <span className="font-semibold text-green-600">+58 points</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Success Rate:</span>
-                    <span className="font-semibold text-blue-600">72%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">System Uptime:</span>
-                    <span className="font-semibold text-gray-900">99.9%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">ML Models:</span>
-                    <span className="font-semibold text-gray-900">4 Active</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Data Storage:</span>
-                    <span className="font-semibold text-gray-900">500TB</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">API Requests/sec:</span>
-                    <span className="font-semibold text-gray-900">10K+</span>
+        <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900 bg-opacity-95 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 backdrop-blur-sm" onClick={() => setIsPopupOpen(false)}>
+          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl w-full h-full max-w-[95vw] max-h-[95vh] flex flex-col overflow-hidden border-4 border-gray-200" onClick={(e) => e.stopPropagation()}>
+            {/* Modern Header with Gradient */}
+            <div className="relative bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-6 sm:px-8 py-5 sm:py-6">
+              {/* Decorative pattern overlay */}
+              <div className="absolute inset-0 opacity-10" style={{
+                backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+                backgroundSize: '30px 30px'
+              }}></div>
+              
+              <div className="relative flex items-center justify-between">
+                <div className="flex-1">
+                  <div className="flex items-center gap-4 mb-2">
+                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                      <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl sm:text-3xl font-grotesk font-bold">CreditWise System Architecture</h3>
+                      <p className="text-sm sm:text-base text-blue-100 mt-1">Interactive diagram - Zoom, pan, and explore the complete system</p>
+                    </div>
                   </div>
                 </div>
+                
+                <button 
+                  onClick={() => setIsPopupOpen(false)}
+                  className="flex-shrink-0 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all duration-200 hover:scale-110 ml-4"
+                >
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
               </div>
             </div>
 
-            {/* Footer Legend */}
-            <div className="bg-gray-50 px-6 py-4 border-t-2 border-gray-200 rounded-b-2xl">
-              <div className="grid grid-cols-6 gap-4 text-xs">
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-blue-500 rounded mr-2"></div>
-                  <span className="font-semibold">Data Sources</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-green-500 rounded mr-2"></div>
-                  <span className="font-semibold">API Gateway</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-purple-500 rounded mr-2"></div>
-                  <span className="font-semibold">ETL Pipeline</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-amber-500 rounded mr-2"></div>
-                  <span className="font-semibold">ML Layer</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-indigo-500 rounded mr-2"></div>
-                  <span className="font-semibold">Business Logic</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
-                  <span className="font-semibold">Presentation</span>
+            {/* Main Content Area with Sidebar */}
+            <div className="flex-1 flex overflow-hidden">
+              {/* Diagram Area */}
+              <div className="flex-1 relative bg-gray-50">
+                <ReactFlow
+                  nodes={nodes}
+                  edges={edges}
+                  onNodesChange={onNodesChange}
+                  onEdgesChange={onEdgesChange}
+                  nodeTypes={nodeTypes}
+                  fitView
+                  attributionPosition="bottom-left"
+                >
+                  <Background color="#d1d5db" gap={20} size={1} />
+                  <Controls className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200" />
+                  <MiniMap
+                    className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200"
+                    nodeColor={(node) => {
+                      if (node.data.color?.includes('blue')) return '#3b82f6';
+                      if (node.data.color?.includes('green')) return '#10b981';
+                      if (node.data.color?.includes('purple')) return '#8b5cf6';
+                      if (node.data.color?.includes('amber')) return '#f59e0b';
+                      if (node.data.color?.includes('indigo')) return '#6366f1';
+                      if (node.data.color?.includes('red')) return '#ef4444';
+                      return '#6b7280';
+                    }}
+                    maskColor="rgba(0, 0, 0, 0.05)"
+                  />
+                </ReactFlow>
+              </div>
+
+              {/* Sidebar - Metrics & Legend */}
+              <div className="w-80 bg-white border-l-4 border-indigo-500 overflow-y-auto">
+                <div className="p-6 space-y-6">
+                  {/* System Metrics Card */}
+                  <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-2xl p-6 border-2 border-indigo-200">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-indigo-500 rounded-xl flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                      </div>
+                      <h4 className="font-grotesk font-bold text-lg text-gray-900">System Metrics</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Total Users</span>
+                        <span className="font-grotesk font-bold text-gray-900">85,000+</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Score Improvement</span>
+                        <span className="font-grotesk font-bold text-green-600">+58 pts</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Success Rate</span>
+                        <span className="font-grotesk font-bold text-blue-600">72%</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">System Uptime</span>
+                        <span className="font-grotesk font-bold text-gray-900">99.9%</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">ML Models</span>
+                        <span className="font-grotesk font-bold text-gray-900">4 Active</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Data Storage</span>
+                        <span className="font-grotesk font-bold text-gray-900">500TB</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">API Requests/sec</span>
+                        <span className="font-grotesk font-bold text-gray-900">10K+</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Legend Card */}
+                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border-2 border-gray-200">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-gray-700 rounded-xl flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                      </div>
+                      <h4 className="font-grotesk font-bold text-lg text-gray-900">Architecture Layers</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-blue-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Data Sources</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-green-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">API Gateway</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-purple-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">ETL Pipeline</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-amber-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">ML Layer</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-indigo-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Business Logic</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-red-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Presentation</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Tips Card */}
+                  <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-6 border-2 border-yellow-200">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-yellow-500 rounded-xl flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <h4 className="font-grotesk font-bold text-lg text-gray-900">Navigation Tips</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Use mouse wheel to zoom in/out</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Click and drag to pan around</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Use controls in bottom-left corner</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Mini-map shows full overview</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1060,113 +1134,187 @@ export function UberEatsEcosystemDiagram() {
         </div>
       </div>
 
-      {/* Full-Screen Popup Modal */}
+      {/* Full-Screen Popup Modal - Redesigned */}
       {isPopupOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4" onClick={() => setIsPopupOpen(false)}>
-          <div className="bg-white rounded-2xl shadow-2xl w-full h-full max-w-7xl max-h-[90vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
-            {/* Header */}
-            <div className="bg-gradient-to-r from-black to-gray-800 text-white px-6 py-4 rounded-t-2xl flex justify-between items-center">
-              <div>
-                <h3 className="text-2xl font-grotesk font-bold">Uber Eats Ecosystem Architecture</h3>
-                <p className="text-sm text-gray-300 mt-1">Interactive diagram - Zoom, pan, and explore the complete system</p>
-              </div>
-              <button 
-                onClick={() => setIsPopupOpen(false)}
-                className="text-white hover:text-gray-200 text-3xl font-bold leading-none"
-              >
-                ×
-              </button>
-            </div>
-
-            {/* Diagram */}
-            <div className="flex-1 relative">
-              <ReactFlow
-                nodes={nodes}
-                edges={edges}
-                onNodesChange={onNodesChange}
-                onEdgesChange={onEdgesChange}
-                nodeTypes={nodeTypes}
-                fitView
-                attributionPosition="bottom-left"
-              >
-                <Background color="#e5e7eb" gap={16} />
-                <Controls />
-                <MiniMap
-                  nodeColor={(node) => {
-                    if (node.data.color?.includes('black')) return '#000000';
-                    if (node.data.color?.includes('green')) return '#10b981';
-                    if (node.data.color?.includes('blue')) return '#3b82f6';
-                    if (node.data.color?.includes('purple')) return '#8b5cf6';
-                    if (node.data.color?.includes('amber')) return '#f59e0b';
-                    if (node.data.color?.includes('red')) return '#ef4444';
-                    return '#6b7280';
-                  }}
-                  maskColor="rgba(0, 0, 0, 0.1)"
-                />
-              </ReactFlow>
-
-              {/* Metadata Panel - Bottom Right in Popup */}
-              <div className="absolute bottom-20 right-4 bg-white/95 backdrop-blur-sm rounded-lg shadow-xl border-2 border-gray-300 p-4 max-w-xs">
-                <h4 className="font-grotesk font-bold text-sm text-gray-900 mb-3">System Metrics</h4>
-                <div className="space-y-2 text-xs">
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Revenue Impact:</span>
-                    <span className="font-semibold text-green-600">$10B+</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Driver Churn:</span>
-                    <span className="font-semibold text-blue-600">18% → 12%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Delivery Time:</span>
-                    <span className="font-semibold text-gray-900">38min → 30min</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Tip Prediction:</span>
-                    <span className="font-semibold text-gray-900">94% Accuracy</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Daily Active Users:</span>
-                    <span className="font-semibold text-gray-900">50M+</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Orders/sec:</span>
-                    <span className="font-semibold text-gray-900">50K+</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-gray-600">Uber One Subscribers:</span>
-                    <span className="font-semibold text-gray-900">35M Target</span>
+        <div className="fixed inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-900 bg-opacity-95 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 backdrop-blur-sm" onClick={() => setIsPopupOpen(false)}>
+          <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl shadow-2xl w-full h-full max-w-[95vw] max-h-[95vh] flex flex-col overflow-hidden border-4 border-gray-200" onClick={(e) => e.stopPropagation()}>
+            {/* Modern Header with Gradient */}
+            <div className="relative bg-gradient-to-r from-black via-gray-800 to-gray-900 text-white px-6 sm:px-8 py-5 sm:py-6">
+              {/* Decorative pattern overlay */}
+              <div className="absolute inset-0 opacity-10" style={{
+                backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+                backgroundSize: '30px 30px'
+              }}></div>
+              
+              <div className="relative flex items-center justify-between">
+                <div className="flex-1">
+                  <div className="flex items-center gap-4 mb-2">
+                    <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                      <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-2xl sm:text-3xl font-grotesk font-bold">Uber Eats Ecosystem Architecture</h3>
+                      <p className="text-sm sm:text-base text-gray-300 mt-1">Interactive diagram - Zoom, pan, and explore the complete system</p>
+                    </div>
                   </div>
                 </div>
+                
+                <button 
+                  onClick={() => setIsPopupOpen(false)}
+                  className="flex-shrink-0 w-12 h-12 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-xl flex items-center justify-center transition-all duration-200 hover:scale-110 ml-4"
+                >
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
               </div>
             </div>
 
-            {/* Footer Legend */}
-            <div className="bg-gray-50 px-6 py-4 border-t-2 border-gray-200 rounded-b-2xl">
-              <div className="grid grid-cols-6 gap-4 text-xs">
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-black rounded mr-2"></div>
-                  <span className="font-semibold">Touchpoints</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-green-500 rounded mr-2"></div>
-                  <span className="font-semibold">Driver Fairness</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-blue-500 rounded mr-2"></div>
-                  <span className="font-semibold">Perfect Timing</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-purple-500 rounded mr-2"></div>
-                  <span className="font-semibold">Ecosystem</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-amber-500 rounded mr-2"></div>
-                  <span className="font-semibold">Backend</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-4 h-4 bg-red-500 rounded mr-2"></div>
-                  <span className="font-semibold">ML & Analytics</span>
+            {/* Main Content Area with Sidebar */}
+            <div className="flex-1 flex overflow-hidden">
+              {/* Diagram Area */}
+              <div className="flex-1 relative bg-gray-50">
+                <ReactFlow
+                  nodes={nodes}
+                  edges={edges}
+                  onNodesChange={onNodesChange}
+                  onEdgesChange={onEdgesChange}
+                  nodeTypes={nodeTypes}
+                  fitView
+                  attributionPosition="bottom-left"
+                >
+                  <Background color="#d1d5db" gap={20} size={1} />
+                  <Controls className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200" />
+                  <MiniMap
+                    className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200"
+                    nodeColor={(node) => {
+                      if (node.data.color?.includes('black')) return '#000000';
+                      if (node.data.color?.includes('green')) return '#10b981';
+                      if (node.data.color?.includes('blue')) return '#3b82f6';
+                      if (node.data.color?.includes('purple')) return '#8b5cf6';
+                      if (node.data.color?.includes('amber')) return '#f59e0b';
+                      if (node.data.color?.includes('red')) return '#ef4444';
+                      return '#6b7280';
+                    }}
+                    maskColor="rgba(0, 0, 0, 0.05)"
+                  />
+                </ReactFlow>
+              </div>
+
+              {/* Sidebar - Metrics & Legend */}
+              <div className="w-80 bg-white border-l-4 border-black overflow-y-auto">
+                <div className="p-6 space-y-6">
+                  {/* System Metrics Card */}
+                  <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-6 border-2 border-gray-300">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                      </div>
+                      <h4 className="font-grotesk font-bold text-lg text-gray-900">System Metrics</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Revenue Impact</span>
+                        <span className="font-grotesk font-bold text-green-600">$10B+</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Driver Churn</span>
+                        <span className="font-grotesk font-bold text-blue-600">18% → 12%</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Delivery Time</span>
+                        <span className="font-grotesk font-bold text-gray-900">38min → 30min</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Tip Prediction</span>
+                        <span className="font-grotesk font-bold text-gray-900">94% Accuracy</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Daily Active Users</span>
+                        <span className="font-grotesk font-bold text-gray-900">50M+</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Orders/sec</span>
+                        <span className="font-grotesk font-bold text-gray-900">50K+</span>
+                      </div>
+                      <div className="flex justify-between items-center p-3 bg-white rounded-xl">
+                        <span className="text-sm text-gray-600 font-medium">Uber One Target</span>
+                        <span className="font-grotesk font-bold text-gray-900">35M</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Legend Card */}
+                  <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border-2 border-gray-200">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-10 h-10 bg-gray-700 rounded-xl flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                      </div>
+                      <h4 className="font-grotesk font-bold text-lg text-gray-900">System Components</h4>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-black rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Touchpoints</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-green-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Driver Fairness</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-blue-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Perfect Timing</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-purple-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Ecosystem</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-amber-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">Backend</span>
+                      </div>
+                      <div className="flex items-center gap-3 p-3 bg-white rounded-xl hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 bg-red-500 rounded-lg flex-shrink-0"></div>
+                        <span className="font-grotesk font-semibold text-sm text-gray-800">ML & Analytics</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Tips Card */}
+                  <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl p-6 border-2 border-yellow-200">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-yellow-500 rounded-xl flex items-center justify-center">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <h4 className="font-grotesk font-bold text-lg text-gray-900">Navigation Tips</h4>
+                    </div>
+                    <ul className="space-y-2 text-sm text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Use mouse wheel to zoom in/out</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Click and drag to pan around</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Use controls in bottom-left corner</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-yellow-600 font-bold">•</span>
+                        <span>Mini-map shows full overview</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

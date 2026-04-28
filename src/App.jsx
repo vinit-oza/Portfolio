@@ -8,7 +8,7 @@ import Lenis from "lenis";
 import NavBar from "./components/ui/NavBar";
 import Hero from "./components/homepage/Hero";
 import About from "./components/homepage/About";
-import Experience from "./components/homepage/Experience";
+import Certificates from "./components/homepage/Certificates";
 import Skills from "./components/homepage/Skills";
 import Works from "./components/homepage/Works";
 import CaseStudy from "./components/homepage/CaseStudy";
@@ -64,7 +64,7 @@ const HomePage = () => {
           <main className="px-5 md:px-10 xl:px-20 2xl:px-28">
             <About forwardedRef={(el) => (sectionRefs.current[0] = el)} />
             <CaseStudy forwardedRef={(el) => (sectionRefs.current[1] = el)} />
-            <Experience forwardedRef={(el) => (sectionRefs.current[2] = el)} />
+            <Certificates forwardedRef={(el) => (sectionRefs.current[2] = el)} />
             <Skills forwardedRef={(el) => (sectionRefs.current[3] = el)} />
             <Works forwardedRef={(el) => (sectionRefs.current[4] = el)} />
             <Contact forwardedRef={(el) => (sectionRefs.current[5] = el)} />

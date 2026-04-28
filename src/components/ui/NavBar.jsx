@@ -77,8 +77,8 @@ export default function NavBar({ sectionRefs, color }) {
           nextTheme = lightTheme;
         } else if (index === 1) { // Case Study - black to white  
           theme = lightTheme;
-          nextTheme = lightTheme; // Experience stays white
-        } else if (index === 2) { // Experience - stays white
+          nextTheme = lightTheme; // Certificates stays white
+        } else if (index === 2) { // Certificates - stays white
           theme = lightTheme;
           nextTheme = lightTheme; // Skills stays white
         } else if (index === 3) { // Skills - stays white
@@ -144,9 +144,9 @@ export default function NavBar({ sectionRefs, color }) {
               let prevTheme;
               if (index === 1) { // Case Study -> About
                 prevTheme = darkTheme;
-              } else if (index === 2) { // Experience -> Case Study  
+              } else if (index === 2) { // Certificates -> Case Study  
                 prevTheme = lightTheme;
-              } else if (index === 3) { // Skills -> Experience
+              } else if (index === 3) { // Skills -> Certificates
                 prevTheme = lightTheme;
               } else if (index === 4) { // Projects -> Skills
                 prevTheme = lightTheme;
@@ -220,8 +220,8 @@ export default function NavBar({ sectionRefs, color }) {
             <span className="font-bold">Case Studies</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
-          <Link to="/#experience" onClick={(e) => handleLinkClick(e, '#experience')} className="group relative min-h-[44px] flex items-center">
-            <span className="font-bold">Experience</span>
+          <Link to="/#certificates" onClick={(e) => handleLinkClick(e, '#certificates')} className="group relative min-h-[44px] flex items-center">
+            <span className="font-bold">Certificates</span>
             <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
           </Link>
           <Link to="/#skills" onClick={(e) => handleLinkClick(e, '#skills')} className="group relative min-h-[44px] flex items-center">
@@ -239,7 +239,7 @@ export default function NavBar({ sectionRefs, color }) {
           <a
             ref={cta}
             className="button group relative hover:bg-transparent min-h-[44px] flex items-center"
-            href="/Vishesh_Prajapati_resume.pdf"
+            href="/Vinit_Prajapati_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -303,14 +303,14 @@ export default function NavBar({ sectionRefs, color }) {
             Case Studies
           </Link>
           <Link 
-            to="/#experience" 
-            onClick={(e) => handleLinkClick(e, '#experience')}
+            to="/#certificates" 
+            onClick={(e) => handleLinkClick(e, '#certificates')}
             className={`text-3xl text-secondary-300 hover:text-white transition-all duration-300 min-h-[44px] min-w-[44px] flex items-center justify-center font-bold ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '175ms' : '0ms' }}
           >
-            Experience
+            Certificates
           </Link>
           <Link 
             to="/#skills" 
@@ -343,7 +343,7 @@ export default function NavBar({ sectionRefs, color }) {
             Contact
           </Link>
           <a 
-            href="/Vishesh_Prajapati_resume.pdf"
+            href="/Vinit_Prajapati_resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleLinkClick}

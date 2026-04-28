@@ -157,9 +157,14 @@ export function CreditWiseSystemArchitecture() {
           style F4 fill:#6b7280,stroke:#374151,stroke-width:2px,color:#fff
           style F5 fill:#6b7280,stroke:#374151,stroke-width:2px,color:#fff
       `;
-      
+
       chartRef.current.innerHTML = chart;
-      mermaid.contentLoaded();
+      chartRef.current.removeAttribute('data-processed');
+      try {
+        mermaid.init(undefined, chartRef.current);
+      } catch (e) {
+        console.error("Mermaid parsing failed for CreditWiseSystemArchitecture:", e);
+      }
     }
   }, []);
 
@@ -284,9 +289,14 @@ export function CreditWiseUserJourney() {
           style E4 fill:#ef4444,stroke:#b91c1c,stroke-width:3px,color:#fff
           style E5 fill:#ef4444,stroke:#b91c1c,stroke-width:3px,color:#fff
       `;
-      
+
       chartRef.current.innerHTML = chart;
-      mermaid.contentLoaded();
+      chartRef.current.removeAttribute('data-processed');
+      try {
+        mermaid.init(undefined, chartRef.current);
+      } catch (e) {
+        console.error("Mermaid parsing failed for CreditWiseUserJourney:", e);
+      }
     }
   }, []);
 
@@ -404,9 +414,14 @@ export function CreditWiseMLPipeline() {
           style E4 fill:#ef4444,stroke:#b91c1c,stroke-width:3px,color:#fff
           style E5 fill:#ef4444,stroke:#b91c1c,stroke-width:3px,color:#fff
       `;
-      
+
       chartRef.current.innerHTML = chart;
-      mermaid.contentLoaded();
+      chartRef.current.removeAttribute('data-processed');
+      try {
+        mermaid.init(undefined, chartRef.current);
+      } catch (e) {
+        console.error("Mermaid parsing failed for CreditWiseMLPipeline:", e);
+      }
     }
   }, []);
 
@@ -549,9 +564,14 @@ export function UberEatsEcosystemFlow() {
           style F4 fill:#ef4444,stroke:#b91c1c,stroke-width:3px,color:#fff
           style F5 fill:#ef4444,stroke:#b91c1c,stroke-width:3px,color:#fff
       `;
-      
+
       chartRef.current.innerHTML = chart;
-      mermaid.contentLoaded();
+      chartRef.current.removeAttribute('data-processed');
+      try {
+        mermaid.init(undefined, chartRef.current);
+      } catch (e) {
+        console.error("Mermaid parsing failed for UberEatsEcosystemFlow:", e);
+      }
     }
   }, []);
 
@@ -612,9 +632,14 @@ export function UberEatsDeliveryOptimization() {
           Note over AI: Continuous Learning
           AI->>AI: Analyze Performance<br/>Update Predictions
       `;
-      
+
       chartRef.current.innerHTML = chart;
-      mermaid.contentLoaded();
+      chartRef.current.removeAttribute('data-processed');
+      try {
+        mermaid.init(undefined, chartRef.current);
+      } catch (e) {
+        console.error("Mermaid parsing failed for UberEatsDeliveryOptimization:", e);
+      }
     }
   }, []);
 

@@ -178,18 +178,27 @@ export default function Contact({ forwardedRef }) {
             <h4 className="text-body-1 2xl:text-4xl font-semibold">Contact Details</h4>
             <div className="flex flex-col space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="mailto:vishesh.aipm@gmail.com"
+                href="mailto:vinitoza1702@gmail.com"
                 className="group relative w-fit cursor-pointer"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>vishesh.aipm@gmail.com</span>
+                <span>vinitoza1702@gmail.com</span>
                 <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
               </a>
+              
+              <a
+                href="tel:+919898471702"
+                className="group relative w-fit cursor-pointer"
+              >
+                <span>+91 9898471702</span>
+                <span className="absolute bottom-0 left-0 h-[0.12em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+              </a>
+              
               <div className="flex gap-4">
                 {/* View Resume */}
                 <a
-                  href="/Vishesh_Prajapati_resume.pdf"
+                  href="/Vinit_Prajapati_resume.pdf"
                   className="group relative w-fit cursor-pointer"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -200,8 +209,8 @@ export default function Contact({ forwardedRef }) {
                 
                 {/* Download Resume */}
                 <a
-                  href="/Vishesh_Prajapati_resume.pdf"
-                  download="Vishesh_Prajapati_resume.pdf"
+                  href="/Vinit_Prajapati_resume.pdf"
+                  download="Vinit_Prajapati_resume.pdf"
                   className="group relative w-fit cursor-pointer"
                 >
                   <span>Download Resume</span>
@@ -215,7 +224,7 @@ export default function Contact({ forwardedRef }) {
             <h4 className="text-body-1 2xl:text-4xl font-semibold">My Digital Spaces</h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https://www.linkedin.com/in/vishesh-prajapati-aipm/"
+                href="https://www.linkedin.com/in/vinit-prajapati-aipm/"
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
@@ -227,7 +236,7 @@ export default function Contact({ forwardedRef }) {
                 </div>
               </a>
               <a
-                href="https://github.com/vishesh0999"
+                href="https://github.com/Vinit-Prajapati-17"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"

@@ -142,7 +142,7 @@ export default function Hero() {
       >
         <div className="flex gap-12 justify-center">
           <a 
-            href="https://www.linkedin.com/in/vishesh-prajapati-aipm/" 
+            href="https://www.linkedin.com/in/vinit-prajapati-aipm/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group bg-accent-100 border border-accent-200 rounded-full p-4 hover:bg-accent-200 transition-all duration-300 hover:scale-110"
@@ -153,7 +153,7 @@ export default function Hero() {
           </a>
           
           <a 
-            href="https://github.com/vishesh0999" 
+            href="https://github.com/Vinit-Prajapati-17" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group bg-accent-100 border border-accent-200 rounded-full p-4 hover:bg-accent-200 transition-all duration-300 hover:scale-110"
@@ -164,7 +164,7 @@ export default function Hero() {
           </a>
           
           <a 
-            href="mailto:vishesh.aipm@gmail.com" 
+            href="mailto:vinitoza1702@gmail.com" 
             className="group bg-accent-100 border border-accent-200 rounded-full p-4 hover:bg-accent-200 transition-all duration-300 hover:scale-110"
           >
             <svg className="w-6 h-6 text-black hover:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,8 +176,8 @@ export default function Hero() {
         {/* Download Resume Button */}
         <div className="flex justify-center mt-4">
           <a 
-            href="/Vishesh_Prajapati_resume.pdf" 
-            download="Vishesh_Prajapati_resume.pdf"
+            href="/Vinit_Prajapati_resume.pdf" 
+            download="Vinit_Prajapati_resume.pdf"
             className="group relative bg-gradient-to-r from-accent-400 to-accent-300 hover:from-accent-500 hover:to-accent-400 border-2 border-accent-300 hover:border-accent-500 rounded-full px-6 py-3 transition-all duration-300 hover:scale-110 flex items-center gap-3 shadow-lg hover:shadow-xl shadow-accent-400/30 hover:shadow-accent-500/40"
           >
             {/* Glow effect */}
@@ -203,7 +203,6 @@ export default function Hero() {
         style={{ opacity: 0 }}
       >
         <div className="text-center space-y-2">
-          <p className="text-gray-800 text-lg font-orbitron">CHICAGO, USA</p>
           <p className="text-gray-600 text-sm">Available for new opportunities</p>
         </div>
       </div>

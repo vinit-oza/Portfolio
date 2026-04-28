@@ -5,15 +5,15 @@ import extractImg from "./assets/images/extract.webp";
 import circuitsImg from "./assets/images/circuits.webp";
 
 export const siteConfig = {
-  name: "Vishesh Kumar",
-  title: "Vishesh Kumar - AI Product Manager & Strategy Lead",
+  name: "Vinit Prajapati",
+  title: "Vinit Prajapati - AI Product Manager & Strategy Lead",
   description: "AI Product Manager and strategy lead based in San Francisco, CA. Specializing in AI/ML products, data-driven product strategy, and building products that scale.",
-  url: "https://vishesh0999.github.io/Portfolio",
-  email: "vishesh.aipm@gmail.com",
+  url: "https://Vinit-Prajapati-17.github.io/Portfolio",
+  email: "vinitoza1702@gmail.com",
   social: {
-    github: "https://github.com/vishesh0999",
-    linkedin: "https://www.linkedin.com/in/vishesh-prajapati-aipm/",
-    twitter: "https://x.com/visheshkumar",
+    github: "https://github.com/Vinit-Prajapati-17",
+    linkedin: "https://www.linkedin.com/in/vinit-prajapati-aipm/",
+    twitter: "https://x.com/vinitprajapati",
   },
 };
 
