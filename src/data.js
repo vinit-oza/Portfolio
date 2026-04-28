@@ -12,7 +12,7 @@ export const siteConfig = {
   email: "vinitoza1702@gmail.com",
   social: {
     github: "https://github.com/Vinit-Prajapati-17",
-    linkedin: "https://www.linkedin.com/in/vinit-prajapati-aipm/",
+    linkedin: "https://www.linkedin.com/in/vinitkumar-prajapati/",
     twitter: "https://x.com/vinitprajapati",
   },
 };

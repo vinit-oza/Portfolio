@@ -142,7 +142,7 @@ export default function Hero() {
       >
         <div className="flex gap-12 justify-center">
           <a 
-            href="https://www.linkedin.com/in/vinit-prajapati-aipm/" 
+            href="https://www.linkedin.com/in/vinitkumar-prajapati/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group bg-accent-100 border border-accent-200 rounded-full p-4 hover:bg-accent-200 transition-all duration-300 hover:scale-110"
@@ -176,8 +176,8 @@ export default function Hero() {
         {/* Download Resume Button */}
         <div className="flex justify-center mt-4">
           <a 
-            href="/Vinit_Prajapati_resume.pdf" 
-            download="Vinit_Prajapati_resume.pdf"
+            href="/Portfolio/Vinit_AI_PM.pdf" 
+            download="Vinit_AI_PM.pdf"
             className="group relative bg-gradient-to-r from-accent-400 to-accent-300 hover:from-accent-500 hover:to-accent-400 border-2 border-accent-300 hover:border-accent-500 rounded-full px-6 py-3 transition-all duration-300 hover:scale-110 flex items-center gap-3 shadow-lg hover:shadow-xl shadow-accent-400/30 hover:shadow-accent-500/40"
           >
             {/* Glow effect */}

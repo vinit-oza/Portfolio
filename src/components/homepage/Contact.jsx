@@ -198,7 +198,7 @@ export default function Contact({ forwardedRef }) {
               <div className="flex gap-4">
                 {/* View Resume */}
                 <a
-                  href="/Vinit_Prajapati_resume.pdf"
+                  href="/Portfolio/Vinit_AI_PM.pdf"
                   className="group relative w-fit cursor-pointer"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -209,8 +209,8 @@ export default function Contact({ forwardedRef }) {
                 
                 {/* Download Resume */}
                 <a
-                  href="/Vinit_Prajapati_resume.pdf"
-                  download="Vinit_Prajapati_resume.pdf"
+                  href="/Portfolio/Vinit_AI_PM.pdf"
+                  download="Vinit_AI_PM.pdf"
                   className="group relative w-fit cursor-pointer"
                 >
                   <span>Download Resume</span>
@@ -224,7 +224,7 @@ export default function Contact({ forwardedRef }) {
             <h4 className="text-body-1 2xl:text-4xl font-semibold">My Digital Spaces</h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https://www.linkedin.com/in/vinit-prajapati-aipm/"
+                href="https://www.linkedin.com/in/vinitkumar-prajapati/"
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"
