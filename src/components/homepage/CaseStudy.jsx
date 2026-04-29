@@ -9,28 +9,17 @@ gsap.registerPlugin(ScrollTrigger);
 const caseStudies = [
   {
     id: 1,
-    slug: "creditwise-score-roadmap",
-    title: "CreditWise Score Roadmap: Empowering Financial Health",
-    subtitle: "A Data-Driven Approach to Credit Score Improvement",
-    type: "FinTech • Data Product • ML Product Management • Behavioral Design",
+    slug: "airbnb-ai-trust-platform",
+    title: "Airbnb: From Air Mattresses to AI-Driven Trust",
+    subtitle: "How Hypothesis Testing and Human Empathy Built a $100B+ Marketplace",
+    type: "AI Personalization • Two-Sided Marketplace • Product Strategy",
     year: "2026",
-    tools: ["Python", "TensorFlow", "React", "PostgreSQL", "ML", "Data Analytics"],
-    image: "/Portfolio/Capitalone.jpeg",
+    tools: ["Machine Learning", "Python", "Smart Pricing", "NLP", "Fraud Detection", "A/B Testing"],
+    image: "/Portfolio/AirBNB.jpeg",
     featured: true
   },
   {
-    id: 3,
-    slug: "youtube-music-growth-strategy",
-    title: "Growing YouTube Music: A Strategic Path to Market Leadership",
-    subtitle: "Closing the Gap with Spotify Through Innovation & Ecosystem Leverage",
-    type: "Product Strategy • Market Growth • Competitive Analysis",
-    year: "2026",
-    tools: ["Gemini AI", "Android", "Google Cloud", "A/B Testing", "Market Research", "Analytics"],
-    image: "/Portfolio/Youtube.jpeg",
-    featured: true
-  },
-  {
-    id: 4,
+    id: 2,
     slug: "spotify-discovery-platform",
     title: "Breaking the Echo Chamber: Spotify's Music Discovery Revolution",
     subtitle: "Solving Music Discovery Staleness Through User-Controlled Personalization",
@@ -41,7 +30,7 @@ const caseStudies = [
     featured: true
   },
   {
-    id: 5,
+    id: 3,
     slug: "ai-personalization-platform",
     title: "AI-Driven Personalization & Agentic Decision Platform",
     subtitle: "Transforming E-commerce Through Intelligent Automation",
@@ -52,7 +41,7 @@ const caseStudies = [
     featured: true
   },
   {
-    id: 6,
+    id: 4,
     slug: "financial-portfolio-platform",
     title: "Financial Portfolio Insights & ESG Analytics Platform",
     subtitle: "Revolutionizing Wealth Management Through Data Intelligence",
@@ -63,7 +52,18 @@ const caseStudies = [
     featured: true
   },
   {
-    id: 2,
+    id: 5,
+    slug: "creditwise-score-roadmap",
+    title: "CreditWise Score Roadmap: Empowering Financial Health",
+    subtitle: "A Data-Driven Approach to Credit Score Improvement",
+    type: "FinTech • Data Product • ML Product Management • Behavioral Design",
+    year: "2026",
+    tools: ["Python", "TensorFlow", "React", "PostgreSQL", "ML", "Data Analytics"],
+    image: "/Portfolio/Capitalone.jpeg",
+    featured: true
+  },
+  {
+    id: 6,
     slug: "uber-eats-strategy",
     title: "Uber Eats Product Case Study: How to Win the Food Delivery War",
     subtitle: "A Fresh Strategy for 2026 to Close the Gap with DoorDash",

@@ -6,7 +6,7 @@ export const detailedCaseStudyData = {
     company: "Leading E-commerce Platform",
     duration: "18 months",
     team: "Cross-functional team of 12 (engineering, data science, UX)",
-    role: "Senior AI Product Manager",
+    role: "AI Product Manager",
     status: "Production - 50M+ Users",
     platform: "Web & Mobile",
     
@@ -372,6 +372,279 @@ export const detailedCaseStudyData = {
     ]
   },
   
+  "airbnb-ai-trust-platform": {
+    id: 7,
+    title: "Airbnb: From Air Mattresses to AI-Driven Trust",
+    subtitle: "How Hypothesis Testing, Human Empathy, and Layered Product Decisions Built a $100B+ Peer-to-Peer Marketplace",
+    company: "Airbnb",
+    duration: "2007 - Present",
+    team: "Cross-functional teams across product, engineering, data science, trust & safety",
+    role: "Product Case Study Analysis",
+    status: "Production - 500M+ Bookings Annually",
+    platform: "Web, Mobile, API",
+    
+    // Links
+    presentationLink: "/Portfolio/AirBNB.pdf",
+    caseStudyFileLink: "/Portfolio/AirBNB.md",
+    githubLink: "https://github.com/vinit-oza/AirBNB_Casestudy",
+    
+    // Hero section
+    heroImage: "/Portfolio/AirBNB.jpeg",
+    overview: "Airbnb's journey from three air mattresses and $240 in revenue to a $100B+ publicly traded company is one of the most instructive product-market fit stories in consumer technology. Through disciplined hypothesis testing, unscalable human work, and strategic AI integration, Airbnb built the world's largest accommodation marketplace with 8M+ listings across 220+ countries.",
+    
+    // Detailed problem statement
+    problem: {
+      title: "The Trust and Quality Challenge",
+      description: "In 2007, the short-term accommodation market was dominated by hotels with inelastic supply. Peer-to-peer channels like Craigslist offered zero trust infrastructure, no integrated payments, and no quality signals. The challenge was unlocking 20-30 million unused spare rooms while building trust between strangers.",
+      painPoints: [
+        "Hotel prices spiked 200-400% during sold-out events, pricing out budget travelers",
+        "20-30 million U.S. homeowners had spare rooms sitting unused with no safe release mechanism",
+        "Craigslist offered zero trust infrastructure - no identity verification, reviews, or recourse",
+        "Cash payment between strangers created friction and safety concerns",
+        "Amateur phone-camera photography prevented informed booking decisions",
+        "No financial protection for hosts against property damage or bad guests",
+        "Hosts' #1 objection: 'I would never let a stranger stay in my home'",
+        "SXSW 2008 relaunch: 5 listings, 2 bookings (1 self-booked) - clear product failure"
+      ]
+    },
+    
+    // Detailed solution
+    solution: {
+      title: "Three Foundational Layers",
+      description: "Airbnb solved the trust problem through three core product layers: trust infrastructure, quality standardization, and frictionless transactions. Each layer was validated through direct user contact before scaling.",
+      phases: [
+        {
+          name: "Proof of Concept",
+          duration: "Aug 2007 - Mar 2008",
+          focus: "MVP validation and friction identification",
+          deliverables: [
+            "Airbed & Breakfast MVP at SF design conference (3 listings, $240 revenue)",
+            "SXSW retest with 5 listings - identified 3 critical friction points",
+            "Chesky self-booked to experience guest flow firsthand",
+            "Specific failure modes documented: cash payment, photo quality, trust vacuum"
+          ]
+        },
+        {
+          name: "Core Friction Removal",
+          duration: "Apr 2008 - Sep 2009",
+          focus: "Solve payment, photography, and initial trust",
+          deliverables: [
+            "Online payment integration - pay at booking, automatic host payout",
+            "Professional photography program - free dispatch to 40 NYC listings",
+            "Bookings tripled on photographed listings within 30 days",
+            "Manual Craigslist host outreach - built supply before demand",
+            "Y Combinator seed: $20K + mentorship, $585K seed round closed"
+          ]
+        },
+        {
+          name: "Trust Infrastructure",
+          duration: "2010 - 2012",
+          focus: "Build comprehensive trust and safety layer",
+          deliverables: [
+            "$1M Host Guarantee after SF ransacking incident (2011)",
+            "Two-sided review system - mutual accountability",
+            "Identity verification: government ID, phone, social profiles",
+            "24/7 customer support for real-time dispute resolution",
+            "Superhost program launched - 4.8+ rating, 90% response rate",
+            "Series A ($7.2M, Sequoia, 2010), Series B ($112M, 2011)"
+          ]
+        },
+        {
+          name: "AI-Powered Optimization",
+          duration: "2012 - 2022",
+          focus: "Scale through machine learning",
+          deliverables: [
+            "Smart Pricing - demand-aware ML pricing engine (+13% occupancy)",
+            "Embedding-based search ranking - personalized results",
+            "Review NLP and sentiment analysis",
+            "Real-time fraud detection (<0.1% fraud rate)",
+            "Personalized recommendations (15-20% of bookings)",
+            "IPO Dec 2020 at $68/share, closed at $144.71 (+113%)"
+          ]
+        },
+        {
+          name: "Platform Expansion & Gen AI",
+          duration: "2023 - Present",
+          focus: "New experiences and AI enhancement",
+          deliverables: [
+            "Airbnb Rooms relaunch (2023) - original room-sharing model",
+            "Icons Experiences (2024) - culturally iconic stays",
+            "Co-Host Network (2024) - property management marketplace",
+            "Generative AI listing optimization tools",
+            "LLM-based customer support automation",
+            "2024 revenue: $11.1 billion, 500M+ bookings"
+          ]
+        }
+      ]
+    },
+    
+    // Key metrics
+    impact: {
+      listings: "2,500 → 8M+",
+      bookings: "10/day → 500M/year",
+      revenue: "$240 → $11.1B",
+      marketCap: "$75-90B",
+      repeatGuests: "50%+",
+      fraudRate: "<0.1%",
+      smartPricing: "+13% occupancy",
+      aiBookings: "15-20%"
+    },
+    
+    // Detailed modules
+    modules: [
+      {
+        name: "Trust Infrastructure Layer",
+        description: "Two-sided verified profiles, mutual review system, $1M Host Guarantee, 24/7 support, and identity verification creating mutual accountability without active enforcement.",
+        technologies: ["Identity Verification", "Review System", "Insurance", "Support Platform"],
+        challenges: [
+          "Building trust between strangers without in-person interaction",
+          "Preventing fraud while maintaining user experience",
+          "Scaling support for millions of transactions globally"
+        ],
+        solutions: [
+          "Two-sided reviews create mutual accountability - both rate each other",
+          "$1M Host Guarantee removed largest psychological barrier",
+          "Identity verification: government ID, phone, social profiles"
+        ],
+        outcomes: [
+          "Host acquisition rate meaningfully accelerated after guarantee",
+          "~50% repeat guest rate by 2024 - direct legacy of trust system",
+          "Fraud rate maintained below 0.1% of bookings",
+          "Media coverage shifted from skeptical to endorsing"
+        ]
+      },
+      {
+        name: "Professional Photography Program",
+        description: "Free professional photography dispatch to any host in major markets. Proven 2-3x booking conversion uplift, later automated using image analysis ML.",
+        technologies: ["Professional Photography", "Image Analysis ML", "Quality Scoring"],
+        challenges: [
+          "Amateur phone photos prevented informed booking decisions",
+          "Scaling photography to millions of listings globally",
+          "Maintaining quality standards as platform grew"
+        ],
+        solutions: [
+          "Chesky personally oversaw first 40 NYC shoots",
+          "Free dispatch to any host - $5-10K/month in early markets",
+          "Automated photo quality scoring via ML after validation"
+        ],
+        outcomes: [
+          "Bookings tripled on photographed listings within 30 days",
+          "Weekly revenue doubled after NYC photography pilot",
+          "2-3x booking uplift validated and scaled globally",
+          "Photography cost ROI was immediate and measurable"
+        ]
+      },
+      {
+        name: "Smart Pricing & AI Optimization",
+        description: "ML-powered nightly rate recommendations ingesting local events, seasonal patterns, and comparable listings. Hosts following recommendations achieve +13% higher occupancy.",
+        technologies: ["Machine Learning", "Python", "Demand Forecasting", "Price Optimization"],
+        challenges: [
+          "Hosts manually pricing without market data",
+          "Balancing host control with algorithmic recommendations",
+          "Real-time pricing adjustments at scale"
+        ],
+        solutions: [
+          "AI-powered pricing framed as suggestions, not mandates",
+          "Continuous A/B testing against rule-based baseline",
+          "Demand-aware engine ingesting events, seasonality, comparables"
+        ],
+        outcomes: [
+          "+13% higher occupancy for hosts following Smart Pricing",
+          "Measurable booking conversion lift vs. baseline",
+          "Hosts retain full pricing control - builds trust",
+          "Dynamic pricing became industry standard"
+        ]
+      },
+      {
+        name: "Personalized Search & Ranking",
+        description: "Multi-objective ML ranking balancing guest preference, host acceptance probability, price sensitivity, and booking likelihood. Drives measurable conversion lift.",
+        technologies: ["Embedding Models", "TensorFlow", "Ranking Algorithms", "A/B Testing"],
+        challenges: [
+          "Matching millions of guests to millions of listings",
+          "Balancing multiple objectives: relevance, price, availability",
+          "Cold-start problem for new users and listings"
+        ],
+        solutions: [
+          "Embedding-based similarity matching",
+          "Multi-objective ranking with learned weights",
+          "Behavioral signals from pre-booking messaging"
+        ],
+        outcomes: [
+          "Personalized recommendations drive 15-20% of bookings",
+          "Measurable conversion lift vs. rule-based search",
+          "Proprietary data moat: 500M+ bidirectional reviews",
+          "Real transaction prices unavailable to competitors"
+        ]
+      }
+    ],
+    
+    // Technologies
+    technologies: [
+      "Machine Learning", "Python", "TensorFlow", "NLP", "Fraud Detection",
+      "Smart Pricing", "Search Ranking", "Image Analysis", "A/B Testing",
+      "Identity Verification", "Payment Processing", "LLM", "Generative AI"
+    ],
+    
+    // Technical challenge
+    technicalChallenge: {
+      problem: "Building AI systems that optimize a marketplace that didn't exist yet - trust and quality had to come before any ML layer",
+      details: [
+        "Models need signal → signal needs behavior → behavior requires users who trust the product",
+        "No dataset existed until foundational product problems were solved",
+        "Photography, payment, reviews were all rule-based or human-executed first",
+        "AI would have been irrelevant in 2009 - data, trust, and behavioral signal didn't exist"
+      ],
+      approach: [
+        "Human Insight First: Direct user contact identified specific friction points before any automation",
+        "Unscalable Validation: Chesky photographed 40 apartments personally to validate 3x booking uplift",
+        "Trust Before Optimization: Two-sided reviews, payment integration, Host Guarantee came before any ML",
+        "AI as Amplifier: ML deployed only after core product hypothesis validated with real users",
+        "Proprietary Data Moat: Bidirectional reviews, real transaction prices, messaging patterns"
+      ],
+      results: [
+        "By 2024, AI central to $11.1B revenue - pricing, search, fraud, support, optimization",
+        "But in 2009, AI would have been irrelevant - had to build trust by hand first",
+        "Smart Pricing: +13% occupancy for adopters",
+        "Fraud detection: <0.1% fraud rate at 500M+ bookings/year",
+        "Personalized recommendations: 15-20% of total bookings"
+      ]
+    },
+    
+    // Key decisions
+    keyDecisions: [
+      {
+        decision: "Do Things That Don't Scale",
+        rationale: "Chesky personally photographing 40 NYC apartments validated 3x booking uplift before automating globally. Manual Craigslist outreach solved chicken-and-egg supply problem.",
+        impact: "Bookings tripled on photographed listings. Weekly revenue doubled. Model validated before scaling."
+      },
+      {
+        decision: "Payment Integration Priority",
+        rationale: "Chesky forgetting cash at SXSW - twice - made payment friction the #1 priority. Pay-at-booking for guests, automatic post-checkout payout for hosts.",
+        impact: "Daily bookings went from ~10/day to ~300/day over 6 months - a 30x increase."
+      },
+      {
+        decision: "$1M Host Guarantee",
+        rationale: "2011 SF ransacking incident forced immediate response. Removed largest psychological barrier: 'I would never let a stranger stay in my home.'",
+        impact: "Host acquisition accelerated. Media shifted from skeptical to endorsing. Trust infrastructure became competitive moat."
+      },
+      {
+        decision: "Two-Sided Review System",
+        rationale: "Mutual accountability without active platform enforcement. Both host and guest rate each other - public, permanent, non-editable.",
+        impact: "Created compounding trust loop. ~50% repeat guest rate by 2024. Reviews became proprietary data moat."
+      }
+    ],
+    
+    // Lessons learned
+    lessonsLearned: [
+      "AI can optimize a process that is already generating value - it cannot create value where core product hypothesis hasn't been validated",
+      "The most durable AI products are built by teams who spend as much time doing unscalable human work as designing training pipelines",
+      "Trust infrastructure must come before optimization - no dataset exists until users trust the product enough to engage",
+      "Direct user contact surfaces specific friction points no survey or analytics dashboard will reveal",
+      "Sequencing matters: human insight → cheap hypothesis testing → validation → automation → AI amplification",
+      "Airbnb didn't build a generational company by scaling fast - it built one by learning fast and fixing the right things in the right order"
+    ]
+  },
+  
   "spotify-discovery-platform": {
     id: 3,
     title: "Breaking the Echo Chamber: Spotify's Music Discovery Revolution",
@@ -379,14 +652,14 @@ export const detailedCaseStudyData = {
     company: "Spotify",
     duration: "8 months",
     team: "Cross-functional team of 15 (ML engineers, designers, editorial)",
-    role: "Senior Product Manager",
+    role: "AI Product Manager",
     status: "Production - 250M+ Users",
     platform: "Mobile, Desktop & Web",
     
     // Links
-    presentationLink: "/Spotify.pdf",
-    caseStudyFileLink: "/Spotify.md",
-    githubLink: "https://github.com/vishesh0999/Spotify-Case-Study",
+    presentationLink: "/Portfolio/Spotify.pdf",
+    caseStudyFileLink: "/Portfolio/Spotify.md",
+    githubLink: "https://github.com/vinit-oza/Spotify-Case-Study",
     
     // Hero section
     heroImage: "/Portfolio/Sportify.jpeg",
@@ -564,234 +837,6 @@ export const detailedCaseStudyData = {
     ]
   },
   
-  "youtube-music-growth-strategy": {
-    id: 4,
-    title: "Growing YouTube Music: A Strategic Path to Market Leadership",
-    subtitle: "Closing the Gap with Spotify Through Innovation & Ecosystem Leverage",
-    company: "YouTube / Google",
-    duration: "24 months",
-    team: "Cross-functional team of 200+ (engineering, AI/ML, marketing, partnerships)",
-    role: "Senior Product Manager - Strategic Initiative Lead",
-    status: "Strategic Initiative - 100M+ Subscribers",
-    platform: "Mobile, Desktop, Web & Smart Devices",
-    
-    // Links
-    presentationLink: "/YT music.pdf",
-    caseStudyFileLink: "/YT music.md",
-    githubLink: "https://github.com/vishesh0999/YT-Music-Case-Study",
-    
-    // Hero section
-    heroImage: "/Portfolio/Youtube.jpeg",
-    overview: "Led a comprehensive 24-month strategic initiative to grow YouTube Music from 9.7% to 20-25% global market share, closing the gap with Spotify through AI-powered innovation, ecosystem leverage, and emerging market expansion. Projected to add 75-100M subscribers and $5B+ incremental revenue.",
-    
-    // Detailed problem statement
-    problem: {
-      title: "The Market Share Challenge",
-      description: "YouTube Music trailed Spotify by 3.3x in market share (9.7% vs 31.7%) despite having the world's largest music-video catalog and 2B+ YouTube users. The platform struggled with brand confusion, product gaps, and late market entry.",
-      painPoints: [
-        "Spotify's commanding 3.3x lead in global market share (281M vs 100M subscribers)",
-        "Brand confusion - users saw YouTube Music as 'YouTube for music' not standalone app",
-        "Contaminated recommendations - YouTube watch history polluted music discovery",
-        "No HiFi/lossless audio option while competitors offered premium quality",
-        "Weak social features - no collaborative playlists or friend activity feed",
-        "Inferior free tier - no background play creating high barrier to adoption",
-        "10-year late market entry (2018 vs 2008) meant established user habits favored Spotify",
-        "Limited differentiation despite unique video-music convergence advantage"
-      ]
-    },
-    
-    // Detailed solution
-    solution: {
-      title: "Five-Pillar Growth Strategy",
-      description: "Comprehensive strategy built on product innovation, ecosystem leverage, emerging market expansion, content differentiation, and brand repositioning to achieve 2.5x growth in 24 months.",
-      phases: [
-        {
-          name: "Foundation Phase",
-          duration: "Months 1-6",
-          focus: "Fix core issues and achieve feature parity",
-          deliverables: [
-            "Enable background play on free tier to remove adoption barrier",
-            "Launch Eclipsa Spatial Audio (HiFi + 3D sound) for all Premium users",
-            "Separate music recommendations from YouTube watch history",
-            "Add collaborative playlists and Spotify migration tool",
-            "Launch 'Switch in Seconds' marketing campaign"
-          ]
-        },
-        {
-          name: "Differentiation Phase",
-          duration: "Months 7-12",
-          focus: "Launch unique features competitors can't replicate",
-          deliverables: [
-            "Gemini AI DJ - conversational music discovery powered by Google AI",
-            "YouTube Music Live - in-app concert streaming platform",
-            "Watch & Listen toggle - seamless audio-visual mode switching",
-            "Music Circle - social listening with video capabilities",
-            "Emerging market expansion with $1.99-$2.99 pricing"
-          ]
-        },
-        {
-          name: "Dominance Phase",
-          duration: "Months 13-24",
-          focus: "Scale globally and establish market leadership",
-          deliverables: [
-            "Full Google ecosystem integration (Android, Pixel, Nest, Maps)",
-            "100+ exclusive artist partnerships and content",
-            "Year in Music - viral annual recap competing with Spotify Wrapped",
-            "Google One Super Bundle ($19.99 for storage + music + premium)",
-            "50+ new market expansions with localized experiences"
-          ]
-        }
-      ]
-    },
-    
-    // Key metrics
-    impact: {
-      marketShare: "9.7% → 20-25%",
-      subscribers: "100M → 175-200M",
-      maus: "100M+ → 250M+",
-      revenue: "+$5B incremental",
-      nps: "+15 points",
-      conversion: "+35%",
-      churn: "-30%",
-      roi: "2.6x (24mo)"
-    },
-    
-    // Detailed modules
-    modules: [
-      {
-        name: "Gemini AI DJ - Conversational Discovery",
-        description: "AI-powered music companion using Google Gemini that understands natural language, mood, and context to curate music in real-time through voice-first interaction.",
-        technologies: ["Gemini AI", "Google Assistant", "Python", "TensorFlow", "NLP"],
-        challenges: [
-          "Creating truly conversational AI beyond pre-set commentary",
-          "Separating music recommendations from YouTube video history",
-          "Real-time learning from user reactions (skip, repeat, like)"
-        ],
-        solutions: [
-          "Leveraged Google Gemini for natural language understanding",
-          "Built separate ML model for music-only signals",
-          "Implemented real-time feedback loop with Redis caching"
-        ],
-        outcomes: [
-          "+20% discovery engagement improvement",
-          "+15% session length increase",
-          "+8% retention improvement",
-          "Cannot be replicated without Google-scale AI infrastructure"
-        ]
-      },
-      {
-        name: "YouTube Music Live - Concert Streaming",
-        description: "In-app live concert streaming, artist Q&As, and virtual events leveraging YouTube Live infrastructure to create new category in music streaming.",
-        technologies: ["YouTube Live", "CDN", "React", "Mobile SDKs", "Payment APIs"],
-        challenges: [
-          "Scaling live events to millions of concurrent viewers",
-          "Monetization through virtual tickets and Super Chat",
-          "Creating FOMO-driven acquisition and retention"
-        ],
-        solutions: [
-          "Leveraged existing YouTube Live global infrastructure",
-          "Built tiered access (free for Premium, ticketed for others)",
-          "Created curated events calendar based on user taste"
-        ],
-        outcomes: [
-          "+10% premium conversion from event-driven sign-ups",
-          "+5M new users per major event",
-          "New revenue stream through virtual tickets",
-          "Viral sharing and social media amplification"
-        ]
-      },
-      {
-        name: "Ecosystem Integration & Bundling",
-        description: "Deep integration across Google's 3B+ Android devices, Pixel hardware, Nest speakers, Google One, and Maps to create seamless multi-touchpoint experience.",
-        technologies: ["Android OS", "Google Cloud", "APIs", "Chromecast", "Wear OS"],
-        challenges: [
-          "Coordinating across multiple Google product teams",
-          "Avoiding antitrust concerns with bundling strategy",
-          "Creating genuine value beyond forced pre-installation"
-        ],
-        solutions: [
-          "Built choice screen on Android to address antitrust",
-          "Created Google One Super Bundle with clear value proposition",
-          "Developed exclusive Pixel features (6-month free trial)"
-        ],
-        outcomes: [
-          "+30M installs/year from Android pre-installation",
-          "+15M bundle subscribers from Google One",
-          "+10M smart speaker users on Nest/Home",
-          "Ecosystem lock-in creating defensible moat"
-        ]
-      }
-    ],
-    
-    // Technologies
-    technologies: [
-      "Gemini AI", "Android", "Google Cloud", "YouTube Live", "TensorFlow",
-      "Python", "React", "Redis", "Kafka", "CDN", "Mobile SDKs",
-      "A/B Testing", "Analytics", "Machine Learning", "NLP", "APIs"
-    ],
-    
-    // Technical challenge
-    technicalChallenge: {
-      problem: "Differentiating YouTube Music from Spotify while leveraging YouTube's ecosystem without creating brand confusion or cannibalizing YouTube's core video business",
-      details: [
-        "Users couldn't distinguish YouTube Music from YouTube proper",
-        "YouTube watch history contaminated music recommendations",
-        "Needed to compete with Spotify's 10-year head start and established habits",
-        "Required building unique features competitors couldn't replicate",
-        "Had to balance ecosystem leverage with antitrust concerns"
-      ],
-      approach: [
-        "Separate ML Models: Built dedicated music-only recommendation engine isolated from YouTube video signals",
-        "Unique Value Proposition: Focused on unreplicable advantages (video-music convergence, Gemini AI, live concerts, ecosystem)",
-        "Gemini AI Differentiation: Leveraged Google's AI superiority for conversational discovery Spotify couldn't match",
-        "Ecosystem Integration: Deep Google integration creating multi-touchpoint habit formation",
-        "Emerging Market Focus: Won price-sensitive markets where Spotify was weak"
-      ],
-      results: [
-        "Closed gap with Spotify from 3.3x to 1.3x in 24 months",
-        "Achieved #2 global platform position (from #4)",
-        "Became #1 in India, Southeast Asia with 40M+ subscribers",
-        "Created defensible moat through video-music convergence",
-        "Maintained 99.9% uptime while scaling to 250M+ users"
-      ]
-    },
-    
-    // Key decisions
-    keyDecisions: [
-      {
-        decision: "Different, Not Just Better Strategy",
-        rationale: "Couldn't out-Spotify Spotify on audio-only features; needed to create new category as 'audio-visual music platform' leveraging YouTube's unique assets",
-        impact: "Positioned YouTube Music as fundamentally different experience, not inferior Spotify clone"
-      },
-      {
-        decision: "Free Tier Background Play",
-        rationale: "No background play was #1 barrier to adoption; enabling it would drive massive free tier engagement and eventual premium conversion",
-        impact: "Free tier engagement up 40%, created conversion funnel from 2B+ YouTube users"
-      },
-      {
-        decision: "Emerging Markets First",
-        rationale: "Spotify dominated developed markets; winning India, Africa, LatAm with mobile-first, affordable pricing could build volume quickly",
-        impact: "Achieved #1 position in India with 40M subscribers, 3x growth in Africa, 2x in LatAm"
-      },
-      {
-        decision: "Gemini AI Investment",
-        rationale: "Google's AI superiority was unreplicable advantage; conversational discovery could leapfrog Spotify's algorithmic approach",
-        impact: "Gemini DJ became signature feature with 50M+ monthly interactions, +20% discovery engagement"
-      }
-    ],
-    
-    // Lessons learned
-    lessonsLearned: [
-      "Late market entrants must differentiate, not imitate - 'different' beats 'better' when competing with established leaders",
-      "Ecosystem advantages only matter if they deliver genuine user value, not just forced bundling",
-      "Emerging markets can provide volume growth that changes competitive dynamics globally",
-      "AI superiority creates defensible moats when integrated into core product experience",
-      "Brand repositioning requires sustained investment - can't fix confusion with single campaign",
-      "Free tier quality determines top-of-funnel; premium features drive conversion",
-      "Video-music convergence is unique advantage no pure audio platform can replicate"
-    ]
-  },
-  
   "uber-eats-strategy": {
     id: 5,
     title: "Uber Eats Product Case Study: How to Win the Food Delivery War",
@@ -804,9 +849,9 @@ export const detailedCaseStudyData = {
     platform: "Mobile, Web & Ecosystem Integration",
     
     // Links
-    presentationLink: "/Uber.pdf",
-    caseStudyFileLink: "/Uber.md",
-    githubLink: "https://github.com/vishesh0999/Uber-Eats-Product-Case-Study",
+    presentationLink: "/Portfolio/Uber.pdf",
+    caseStudyFileLink: "/Portfolio/Case-file.txt",
+    githubLink: "https://github.com/vinit-oza/Uber-Eats-Product-Case-Study",
     
     // Hero section
     heroImage: "/Portfolio/UberCase.jpeg",
@@ -1030,14 +1075,14 @@ export const detailedCaseStudyData = {
     company: "CreditWise",
     duration: "12 months",
     team: "Cross-functional team of 15 (data science, product, engineering, compliance)",
-    role: "Senior Product Manager",
+    role: "Product Manager",
     status: "Production - 85K+ Users",
     platform: "Web & Mobile App",
     
     // Links
-    presentationLink: "/Capitalone.pdf",
-    caseStudyFileLink: "/CreditWise.md",
-    githubLink: "https://github.com/vishesh0999/CreditWise-Score-Roadmap",
+    presentationLink: "/Portfolio/Creditwise.pdf",
+    caseStudyFileLink: "/Portfolio/CreditWise.md",
+    githubLink: "https://github.com/vinit-oza/CreditWise-Score-Casestudy",
     
     // Hero section
     heroImage: "/Portfolio/Capitalone.jpeg",

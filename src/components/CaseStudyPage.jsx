@@ -174,8 +174,7 @@ export default function CaseStudyPage() {
                   {caseStudy.caseStudyFileLink ? (
                     <a
                       href={caseStudy.caseStudyFileLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      download
                       className="flex items-center justify-center px-4 sm:px-6 py-3 sm:py-4 bg-gray-700 text-white rounded-xl font-grotesk font-bold hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl transform hover:scale-105 duration-200 text-sm sm:text-base"
                     >
                       <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -669,7 +668,11 @@ export default function CaseStudyPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {Object.entries(detailedCaseStudyData)
-                .filter(([key]) => key !== slug)
+                .filter(([key]) => {
+                  // Only show these 4 case studies
+                  const allowedSlugs = ['uber-eats-strategy', 'creditwise-score-roadmap', 'airbnb-ai-trust-platform', 'spotify-discovery-platform'];
+                  return allowedSlugs.includes(key) && key !== slug;
+                })
                 .slice(0, 3)
                 .map(([key, study]) => (
                   <Link

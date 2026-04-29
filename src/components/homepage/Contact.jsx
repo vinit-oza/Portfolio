@@ -37,20 +37,7 @@ export default function Contact({ forwardedRef }) {
 
   }, [contactSection])
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      // Set time to Chicago timezone (America/Chicago)
-      setTime(new Date().toLocaleTimeString('en-US', {
-        timeZone: 'America/Chicago',
-        hour12: true,
-        hour: 'numeric',
-        minute: '2-digit',
-        second: '2-digit'
-      }));
-    }, 1000);
-    return () => clearInterval(timer);
-  });
-
+  
   const sendEmail = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
@@ -249,15 +236,7 @@ export default function Contact({ forwardedRef }) {
               </a>
             </div>
           </div>
-          <div className="space-y-3 ">
-            <h4 className="text-body-1 font-semibold 2xl:text-4xl">Location</h4>
-            <div className="space-y-2 text-body-2 2xl:text-3xl">
-              <p>
-                Chicago, USA <br></br>
-                {time} CST
-              </p>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
