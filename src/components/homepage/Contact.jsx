@@ -223,7 +223,7 @@ export default function Contact({ forwardedRef }) {
                 </div>
               </a>
               <a
-                href="https://github.com/Vinit-Prajapati-17"
+                href="https://github.com/vinit-oza"
                 className="group flex items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"

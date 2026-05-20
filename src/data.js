@@ -11,7 +11,7 @@ export const siteConfig = {
   url: "https://Vinit-Prajapati-17.github.io/Portfolio",
   email: "vinitoza1702@gmail.com",
   social: {
-    github: "https://github.com/Vinit-Prajapati-17",
+    github: "https://github.com/vinit-oza",
     linkedin: "https://www.linkedin.com/in/vinitkumar-prajapati/",
     twitter: "https://x.com/vinitprajapati",
   },
