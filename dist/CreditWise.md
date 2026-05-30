@@ -6,13 +6,6 @@
 
 CreditWise is a credit score monitoring and improvement platform designed to empower consumers with actionable insights into their financial health. This case study explores the challenges consumers face in understanding, monitoring, and improving their credit scores, and how a data-driven roadmap approach can systematically guide users toward better creditworthiness. By analyzing user behavior, credit bureau data, and financial literacy gaps, this study presents a holistic framework for credit score improvement.
 
-**Key Results:**
-- **85,000+ Active Users** with 68% retention at 6 months
-- **+58 Points Average Improvement** for active users
-- **72% Success Rate** achieving 50+ point improvements
-- **83% Error Dispute Success Rate**
-- **+34% Financial Literacy Improvement**
-
 ---
 
 ## Table of Contents
@@ -31,6 +24,7 @@ CreditWise is a credit score monitoring and improvement platform designed to emp
 12. [Challenges & Limitations](#12-challenges--limitations)
 13. [Recommendations](#13-recommendations)
 14. [Conclusion](#14-conclusion)
+15. [References](#15-references)
 
 ---
 
@@ -129,12 +123,34 @@ The global credit scoring market is experiencing significant growth:
 ### 4.3 Competitive Landscape
 
 | Platform | Score Access | Personalized Roadmap | Educational Content | Simulation Tools |
-|----------|-------------|---------------------|--------------------|--------------------|
+|----------|-------------|---------------------|--------------------|----------------- |
 | Credit Karma | Free | Limited | Moderate | Yes |
 | Experian Boost | Free | No | Limited | No |
 | MyFICO | Paid | No | Extensive | Limited |
 | NerdWallet | Free | Limited | Extensive | No |
 | **CreditWise** | **Free** | **Comprehensive** | **Personalized** | **Advanced** |
+
+### 4.4 SWOT Analysis
+
+**Strengths:**
+- Personalized roadmap approach differentiates from competitors
+- Data-driven recommendations backed by machine learning
+- User-centric design focused on behavioral change
+
+**Weaknesses:**
+- Dependency on third-party data accuracy
+- Initial user trust building required
+- Complex algorithm development and maintenance
+
+**Opportunities:**
+- Growing digital-first consumer base
+- Increasing regulatory focus on financial inclusion
+- Partnerships with fintech and banking institutions
+
+**Threats:**
+- Data privacy regulations and compliance costs
+- Established competitors with large user bases
+- Rapidly evolving credit scoring models
 
 ---
 
@@ -157,6 +173,16 @@ Data was collected from multiple sources:
 - **User Surveys**: Pre and post-intervention surveys measuring financial literacy and behavior
 - **Platform Analytics**: User interaction data including feature usage, session duration, and return frequency
 - **Financial Transaction Data**: Anonymized payment patterns and credit utilization metrics
+
+### 5.3 Analytical Framework
+
+The analysis framework included:
+
+- **Descriptive Statistics**: Understanding the current state of user credit profiles
+- **Regression Analysis**: Identifying key factors influencing score changes
+- **Cluster Analysis**: Segmenting users into actionable personas
+- **Time Series Analysis**: Tracking improvement trajectories over time
+- **A/B Testing**: Evaluating the effectiveness of different recommendation strategies
 
 ---
 
@@ -342,51 +368,7 @@ The CreditWise Roadmap follows a **5-Phase approach**:
 Phase 1: ASSESS → Phase 2: PLAN → Phase 3: ACT → Phase 4: MONITOR → Phase 5: OPTIMIZE
 ```
 
-### 8.2 Workflow Diagram
-
-```mermaid
-graph TD
-    A[User Onboarding] --> B[Phase 1: ASSESS]
-    B --> C[Credit Report Pull]
-    B --> D[Error Identification]
-    B --> E[Baseline Metrics]
-    
-    C --> F[Phase 2: PLAN]
-    D --> F
-    E --> F
-    
-    F --> G[Personalized Roadmap]
-    F --> H[Goal Setting]
-    F --> I[Priority Ranking]
-    
-    G --> J[Phase 3: ACT]
-    H --> J
-    I --> J
-    
-    J --> K[File Disputes]
-    J --> L[Automate Payments]
-    J --> M[Optimize Utilization]
-    J --> N[Debt Reduction]
-    
-    K --> O[Phase 4: MONITOR]
-    L --> O
-    M --> O
-    N --> O
-    
-    O --> P[Score Tracking]
-    O --> Q[Anomaly Detection]
-    O --> R[Progress Reports]
-    
-    P --> S[Phase 5: OPTIMIZE]
-    Q --> S
-    R --> S
-    
-    S --> T[Fine-tune Strategy]
-    S --> U[Advanced Techniques]
-    S --> V[Maintenance Mode]
-```
-
-### 8.3 Phase 1: ASSESS (Week 1-2)
+### 8.2 Phase 1: ASSESS (Week 1-2)
 
 **Activities:**
 - Complete credit score pull from all three bureaus
@@ -400,7 +382,7 @@ graph TD
 - Error identification list with dispute priorities
 - Personalized risk factor ranking
 
-### 8.4 Phase 2: PLAN (Week 2-4)
+### 8.3 Phase 2: PLAN (Week 2-4)
 
 **Activities:**
 - Generate personalized roadmap based on assessment
@@ -415,7 +397,7 @@ graph TD
 - Budget optimization recommendations
 - Milestone calendar
 
-### 8.5 Phase 3: ACT (Month 1-6)
+### 8.4 Phase 3: ACT (Month 1-6)
 
 **Activities:**
 - Execute prioritized action items
@@ -430,7 +412,7 @@ graph TD
 - Payment calendar with reminders
 - Weekly progress summaries
 
-### 8.6 Phase 4: MONITOR (Ongoing)
+### 8.5 Phase 4: MONITOR (Ongoing)
 
 **Activities:**
 - Track score changes across all bureaus
@@ -445,7 +427,7 @@ graph TD
 - Monthly progress reports
 - Trend analysis visualizations
 
-### 8.7 Phase 5: OPTIMIZE (Month 6+)
+### 8.6 Phase 5: OPTIMIZE (Month 6+)
 
 **Activities:**
 - Fine-tune strategies based on results
@@ -491,19 +473,19 @@ graph TD
 
 **Finding:** 79% of users had at least one error on their credit reports. Successfully disputed errors resulted in an average score increase of **25 points**.
 
-**Common Errors Found:**
-- Incorrect account status (34%)
-- Duplicate accounts (22%)
-- Wrong balance amounts (19%)
-- Identity mix-ups (15%)
-- Outdated information (10%)
+- **Common Errors Found:**
+  - Incorrect account status (34%)
+  - Duplicate accounts (22%)
+  - Wrong balance amounts (19%)
+  - Identity mix-ups (15%)
+  - Outdated information (10%)
 
 ### 9.4 Key Finding 4: Engagement Correlation
 
 **Finding:** There is a strong positive correlation (r = 0.78) between platform engagement frequency and credit score improvement.
 
 | Engagement Level | Weekly Sessions | Avg. Improvement (6 months) |
-|-----------------|----------------|----------------------------|
+|-----------------|----------------|---------------------------|
 | High | 5+ | +72 points |
 | Medium | 2-4 | +51 points |
 | Moderate | 1 | +34 points |
@@ -534,32 +516,7 @@ The CreditWise platform leverages modern technology:
 Data Sources → ETL Pipeline → Data Warehouse → ML Models → Recommendation Engine → User Interface
 ```
 
-### 10.3 System Architecture Diagram
-
-```mermaid
-graph LR
-    A[Credit Bureaus] --> B[Data Integration Layer]
-    C[User Input] --> B
-    D[Financial Institutions] --> B
-    
-    B --> E[ETL Pipeline]
-    E --> F[Data Warehouse]
-    
-    F --> G[ML Models]
-    G --> H[Recommendation Engine]
-    
-    H --> I[API Layer]
-    I --> J[Web App]
-    I --> K[Mobile App]
-    
-    J --> L[User Dashboard]
-    K --> L
-    
-    L --> M[Analytics]
-    M --> G
-```
-
-### 10.4 Recommendation Engine
+### 10.3 Recommendation Engine
 
 The ML-powered recommendation engine uses:
 
@@ -568,7 +525,7 @@ The ML-powered recommendation engine uses:
 3. **Reinforcement Learning**: Continuously improving recommendations based on observed outcomes
 4. **Natural Language Processing**: Personalizing communication style and educational content
 
-### 10.5 Rollout Plan
+### 10.4 Rollout Plan
 
 | Phase | Timeline | Focus | Target Users |
 |-------|----------|-------|--------------|
@@ -593,17 +550,7 @@ After 12 months of operation:
 - **User Retention Rate**: 68% at 6 months
 - **Financial Literacy Score Improvement**: +34% (pre vs. post survey)
 
-### 11.2 Impact Visualization
-
-```mermaid
-pie title User Score Improvement Distribution
-    "50+ points (72%)" : 72
-    "25-49 points (18%)" : 18
-    "10-24 points (7%)" : 7
-    "<10 points (3%)" : 3
-```
-
-### 11.3 Qualitative Impact
+### 11.2 Qualitative Impact
 
 User testimonials revealed significant life improvements:
 
@@ -613,7 +560,7 @@ User testimonials revealed significant life improvements:
 - 67% reported increased confidence in financial decision-making
 - 41% reported sharing credit knowledge with family and friends
 
-### 11.4 Return on Investment
+### 11.3 Return on Investment
 
 - **Cost per User Acquisition**: $12.50
 - **Lifetime Value per User**: $85.00
@@ -699,6 +646,21 @@ CreditWise envisions a future where every consumer has access to personalized, d
 
 ---
 
+## 15. References
+
+1. Consumer Financial Protection Bureau (CFPB). "Key Dimensions of Credit Score Literacy." 2024.
+2. Federal Reserve Board. "Report on the Economic Well-Being of U.S. Households." 2024.
+3. FICO. "Understanding FICO Scores." 2024.
+4. VantageScore Solutions. "The Complete Guide to Credit Scores." 2024.
+5. TransUnion. "Consumer Credit Trends Report." 2024.
+6. Experian. "State of Credit Report." 2024.
+7. National Foundation for Credit Counseling. "Financial Literacy Survey." 2024.
+8. McKinsey & Company. "The Future of Credit Scoring." 2024.
+9. Deloitte. "Digital Banking and Financial Inclusion." 2024.
+10. World Bank Group. "Financial Inclusion and Credit Access." 2024.
+
+---
+
 ## Appendix
 
 ### A. Glossary of Key Terms
@@ -731,4 +693,4 @@ CreditWise envisions a future where every consumer has access to personalized, d
 
 *This case study was prepared as part of the CreditWise Score Roadmap project. All data has been anonymized and aggregated to protect individual privacy.*
 
-**Last Updated: February 2026**
+*Last Updated: February 2026*
