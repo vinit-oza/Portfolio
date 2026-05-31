@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Heading from "../ui/Heading";
@@ -10,8 +9,8 @@ const certificatesData = [
     issuer: "Google / Coursera",
     date: "2025",
     category: "Project Management",
-    pdfUrl: "/Portfolio/Google Agile Project Management.pdf",
-    imageUrl: "/Portfolio/certificates/Google Agile Project Management.png",
+    pdfUrl: "/Portfolio/Google%20Agile%20Project%20Management.pdf",
+    imageUrl: "/Portfolio/certificates/Google%20Agile%20Project%20Management.png",
   },
   {
     id: 2,
@@ -19,8 +18,8 @@ const certificatesData = [
     issuer: "Microsoft / Coursera",
     date: "2025",
     category: "AI Product Management",
-    pdfUrl: "/Portfolio/AI Product Manager.pdf",
-    imageUrl: "/Portfolio/certificates/AI Product Manager.png",
+    pdfUrl: "/Portfolio/AI%20Product%20Manager.pdf",
+    imageUrl: "/Portfolio/certificates/AI%20Product%20Manager.png",
   },
   {
     id: 3,
@@ -28,8 +27,8 @@ const certificatesData = [
     issuer: "IBM / Coursera",
     date: "2025",
     category: "Generative AI",
-    pdfUrl: "/Portfolio/Gen AI For Data Analytics.pdf",
-    imageUrl: "/Portfolio/certificates/Gen AI For Data Analytics.png",
+    pdfUrl: "/Portfolio/Gen%20AI%20For%20Data%20Analytics.pdf",
+    imageUrl: "/Portfolio/certificates/Gen%20AI%20For%20Data%20Analytics.png",
   },
   {
     id: 4,
@@ -37,8 +36,8 @@ const certificatesData = [
     issuer: "IBM / Coursera",
     date: "2025",
     category: "Generative AI",
-    pdfUrl: "/Portfolio/Gen Ai Prompt Engg.pdf",
-    imageUrl: "/Portfolio/certificates/Gen AI Prompt Engineering.png",
+    pdfUrl: "/Portfolio/Gen%20Ai%20Prompt%20Engg.pdf",
+    imageUrl: "/Portfolio/certificates/Gen%20AI%20Prompt%20Engineering.png",
   },
   {
     id: 5,
@@ -46,8 +45,8 @@ const certificatesData = [
     issuer: "IBM / Coursera",
     date: "2025",
     category: "Data Science",
-    pdfUrl: "/Portfolio/Databases and SQL for Data Science with Python.pdf",
-    imageUrl: "/Portfolio/certificates/Databases and SQL for Data Science with Python.png",
+    pdfUrl: "/Portfolio/Databases%20and%20SQL%20for%20Data%20Science%20with%20Python.pdf",
+    imageUrl: "/Portfolio/certificates/Databases%20and%20SQL%20for%20Data%20Science%20with%20Python.png",
   },
   {
     id: 6,
@@ -55,8 +54,8 @@ const certificatesData = [
     issuer: "Professional Certification",
     date: "2025",
     category: "Data Analytics",
-    pdfUrl: "/Portfolio/Data Analytics And Vissulization.pdf",
-    imageUrl: "/Portfolio/certificates/Data Analytics And Visualization.png",
+    pdfUrl: "/Portfolio/Data%20Analytics%20And%20Vissulization.pdf",
+    imageUrl: "/Portfolio/certificates/Data%20Analytics%20And%20Visualization.png",
   },
 ];
 
